@@ -29,40 +29,35 @@
     width: 100%;
     height: 100%;
     background-color: lightgray; /* Change background color as needed */
-    border-radius: 7px; /* Rounded corners */
+    border-radius: 10px; /* Rounded corners */
     transition: stroke 0.3s ease; /* Smooth transition for stroke color */
   }
 
   /* Style for the SVG image */
   .button-svg {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 7px; /* Rounded corners for the image */
   }
 
+  /* Style for the green stroke */
   .green-stroke {
-      position: absolute;
-      top: -3px; /* Adjust position to create an outer stroke */
-      left: -3px; /* Adjust position to create an outer stroke */
-      width: calc(100% + 6px); /* Adjust width to account for the stroke width */
-      height: calc(100% + 6px); /* Adjust height to account for the stroke width */
-      stroke: transparent; /* Initially transparent */
-      stroke-width: 6px; /* Set stroke width */
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-dasharray: 0 264; /* Initial dash length to hide stroke */
-      border-radius: 10px; /* Adjust border radius */
-      transition: stroke-dasharray 0.3s ease, stroke 0.3s ease; /* Smooth transition for stroke dash and stroke color */
+    stroke: transparent; /* Initially transparent */
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    border-radius: 10px;
+    stroke-dasharray: 0 264; /* Initial dash length to hide stroke */
+    transition: stroke-dasharray 0.3s ease, stroke 0.3s ease; /* Smooth transition for stroke dash and stroke color */
   }
 
-
-
-/* Show stroke on click */
-    .clicked .green-stroke {
-      stroke: green; /* Change stroke color on click */
-      stroke-dasharray: 264 264; /* Full dash length to show stroke */
-    }
+  /* Show stroke on click */
+  .clicked .green-stroke {
+    stroke: green; /* Change stroke color on click */
+    stroke-dasharray: 264 264; /* Full dash length to show stroke */
+  }
 </style>
 </head>
 <body>
@@ -71,12 +66,12 @@
   <!-- Replace the 'src' attribute with the actual paths to your SVG images -->
   <!-- Repeat this for all your images -->
   <!-- Make sure you adjust the viewBox accordingly for your SVGs -->
-  <!-- You can copy and paste this block for each of your images -->
+  <!-- You can copy and paste this block for each of your 50 images -->
 
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="/static/Icons/Eagle/HD2-E110.png" width="64" height="64" style="border-radius: 10px;"/>
+      <svg class="button-svg" viewBox="0 0 50 50">
+        <image href="/static/Icons/Eagle/HD2-E110.png" width="50" height="50" style="border-radius: 10px;"/>
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -86,7 +81,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Eagle/HD2-E500.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -96,7 +91,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Eagle/HD2-EA.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -106,7 +101,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Eagle/HD2-ECB.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -116,7 +111,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Eagle/HD2-ENA.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -126,7 +121,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Eagle/HD2-ERA.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -136,7 +131,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Eagle/HD2-ESR.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -146,7 +141,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Eagle/HD2-ESS.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -156,7 +151,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Emplacements/HD2-APM.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -166,7 +161,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Emplacements/HD2-IM.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -176,7 +171,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Emplacements/HD2-SG.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -186,7 +181,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Emplacements/HD2-TT.png" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -196,7 +191,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -206,7 +201,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -216,7 +211,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -226,7 +221,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -236,7 +231,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -246,7 +241,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -256,7 +251,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -266,7 +261,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -276,7 +271,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -286,7 +281,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -296,7 +291,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -306,7 +301,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -316,7 +311,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -326,7 +321,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -336,7 +331,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -346,7 +341,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -356,7 +351,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -366,7 +361,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -376,7 +371,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -386,7 +381,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -396,7 +391,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -406,7 +401,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -416,7 +411,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -426,7 +421,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -436,7 +431,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -446,7 +441,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -456,7 +451,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -466,7 +461,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -476,7 +471,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -486,7 +481,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -496,7 +491,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -506,7 +501,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -516,7 +511,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
@@ -526,7 +521,7 @@
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
       <svg class="button-svg" viewBox="0 0 64 64">
-        <image href="" width="64" height="64" style="border-radius: 10px;"/>
+        <!-- Your SVG content here -->
       </svg>
       <svg class="green-stroke" viewBox="0 0 64 64">
         <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
