@@ -10,6 +10,11 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/selection')  # Define the '/selection' endpoint
+def selection():
+    return render_template('selection/index.html')
+
+
 # Route to handle keyboard events
 @app.route('/press_key/<key>')
 def press_key(key):

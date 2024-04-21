@@ -16,6 +16,7 @@
             <button onclick="pressKey('s')">Press 's'</button>
             <button onclick="pressKey('d')">Press 'd'</button>
             <button onclick="toggleFullscreen()">Toggle Fullscreen</button> <!-- New button -->
+            <a href="{{ url_for('selection') }}"><button>Go to Selection Page</button></a> <!-- Button to go to selection page -->
         </div>
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
