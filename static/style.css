@@ -1,96 +1,96 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
+    height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f21;
 }
 
 .container {
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.button-group {
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    overflow: hidden; /* Hide any content overflowing from container */
 }
 
-.button-group button {
-    padding: 10px 20px;
-    font-size: 16px;
+.page-margin {
+    margin: 20px;
+    flex: 1; /* Fill remaining space */
 }
 
-/* Style for the grid container */
 .grid-container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
-gap: 10px;
-padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); /* Adjusted to fill available space */
+    gap: 10px;
+    padding: 10px;
+    max-width: 800px; /* Limit the maximum width */
+    width: calc(100% - 40px); /* Adjusted to account for margins */
+    margin: auto; /* Center the grid horizontally */
 }
 
-.row-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping of items to next row */
-    gap: 10px; /* Adjust the gap between items */
-    padding: 10px; /* Default padding */
-    grid-auto-rows: auto;
-    justify-content: space-between;
-}
-
-/* Style for the button container */
 .button-container {
-position: relative;
-width: 64px;
-height: 64px;
-cursor: pointer;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
 }
 
-/* Style for the background square */
 .background-square {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: lightgray; /* Change background color as needed */
-border-radius: 7px; /* Rounded corners */
-transition: stroke 0.4s ease; /* Smooth transition for stroke color */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    border-radius: 7px;
+    transition: stroke 0.4s ease;
 }
 
-/* Style for the SVG image */
 .button-svg {
-position: absolute;
-width: 100%;
-height: 100%;
-border-radius: 7px; /* Rounded corners for the image */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
 }
 
 .green-stroke {
-  position: absolute;
-  top: -3px; /* Adjust position to create an outer stroke */
-  left: -3px; /* Adjust position to create an outer stroke */
-  width: calc(100% + 6px); /* Adjust width to account for the stroke width */
-  height: calc(100% + 6px); /* Adjust height to account for the stroke width */
-  stroke: transparent; /* Initially transparent */
-  stroke-width: 6px; /* Set stroke width */
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 0 264; /* Initial dash length to hide stroke */
-  border-radius: 10px; /* Adjust border radius */
-  transition: stroke-dasharray 0.4s ease, stroke 0.4s ease; /* Smooth transition for stroke dash and stroke color */
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    stroke: transparent;
+    stroke-width: 6px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 0 264;
+    border-radius: 10px;
+    transition: stroke-dasharray 0.4s ease, stroke 0.4s ease;
 }
 
-
-
-/* Show stroke on click */
 .clicked .green-stroke {
-  stroke: #65ff0c; /* Change stroke color on click */
-  stroke-dasharray: 264 264; /* Full dash length to show stroke */
+    stroke: #ffbf00;
+    stroke-dasharray: 264 264;
 }
 
+#fullscreenButtonContainer {
+    position: fixed;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure it's above other content */
+    margin: auto;
+}
+
+#fullscreenButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#fullscreenIcon {
+    width: 24px;
+    height: 24px;
+}
