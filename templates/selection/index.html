@@ -1,73 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adaptive Grid of Buttons with Green Stroke</title>
-<style>
-  /* Style for the grid container */
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
-    gap: 10px;
-    padding: 10px;
-  }
-
-  /* Style for the button container */
-  .button-container {
-    position: relative;
-    width: 64px;
-    height: 64px;
-    cursor: pointer;
-  }
-
-  /* Style for the background square */
-  .background-square {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: lightgray; /* Change background color as needed */
-    border-radius: 7px; /* Rounded corners */
-    transition: stroke 0.3s ease; /* Smooth transition for stroke color */
-  }
-
-  /* Style for the SVG image */
-  .button-svg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 7px; /* Rounded corners for the image */
-  }
-
-  .green-stroke {
-      position: absolute;
-      top: -3px; /* Adjust position to create an outer stroke */
-      left: -3px; /* Adjust position to create an outer stroke */
-      width: calc(100% + 6px); /* Adjust width to account for the stroke width */
-      height: calc(100% + 6px); /* Adjust height to account for the stroke width */
-      stroke: transparent; /* Initially transparent */
-      stroke-width: 6px; /* Set stroke width */
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-dasharray: 0 264; /* Initial dash length to hide stroke */
-      border-radius: 10px; /* Adjust border radius */
-      transition: stroke-dasharray 0.3s ease, stroke 0.3s ease; /* Smooth transition for stroke dash and stroke color */
-  }
-
-
-
-/* Show stroke on click */
-    .clicked .green-stroke {
-      stroke: #65ff0c; /* Change stroke color on click */
-      stroke-dasharray: 264 264; /* Full dash length to show stroke */
-    }
-
-    body {
-        background-color: #1f1f21;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Grid of Buttons with Green Stroke</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-color: #1f1f21;
+        }
+    </style>
 </head>
 
 <body>
@@ -87,12 +30,10 @@
   </div>
   <div class="button-container" onclick="toggleStroke(this)">
     <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
         <img class="button-svg" src="/static/Icons/Eagle/HD2-E500.png" alt="HD2-E110" width="64" height="64">
-      </svg>
         <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+        </svg>
     </div>
   </div>
   <div class="button-container" onclick="toggleStroke(this)">
@@ -575,15 +516,10 @@
       </svg>
     </div>
   </div>
-
-  <!-- Repeat this block for all your images -->
 </div>
 
-<script>
-  function toggleStroke(element) {
-    element.classList.toggle('clicked');
-  }
-</script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
 
 </body>
 </html>
