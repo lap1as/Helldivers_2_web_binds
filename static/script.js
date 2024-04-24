@@ -51,3 +51,27 @@ document.addEventListener("fullscreenchange", function () {
         icon.src = "/static/fullscreenOn.png";
     }
 });
+
+// Select the save button
+const saveButton = document.querySelector('#save-button');
+
+// Add the event listener
+saveButton.addEventListener('click', function() {
+  // Select all active divs and extract their image paths
+  const imagePaths = Array.from(document.querySelectorAll('.button-container.clicked'))
+    .map(div => div.querySelector('image').getAttribute('href'));
+
+  // Send a POST request to the Flask route
+  fetch('/save_image_paths', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ imagePaths }),
+  })
+  .then(response => response.text())
+  .then(data => console.log(data))
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+});

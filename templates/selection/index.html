@@ -1,530 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adaptive Grid of Buttons with Green Stroke</title>
-<style>
-    body {
-        background-color: #1f1f21;
-    }
-</style>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>Adaptive Grid of Buttons with Green Stroke</title>
+    <style>
+        body {
+            background-color: #1f1f21;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Replace the 'src' attribute with the actual paths to your SVG images -->
+      <!-- Repeat this for all your images -->
+      <!-- Make sure you adjust the viewBox accordingly for your SVGs -->
 
-<body>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <img class="button-svg" src="/static/Icons/Eagle/HD2-E110.png" alt="HD2-E110" width="64" height="64">
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+            <img class="button-svg" src="/static/Icons/Eagle/HD2-E500.png" alt="HD2-E110" width="64" height="64">
+          </svg>
+            <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <img class="button-svg" src="/static/Icons/Eagle/HD2-EA.png" alt="HD2-E110" width="64" height="64">
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <img class="button-svg" src="/static/Icons/Eagle/HD2-ECB.png" alt="HD2-E110" width="64" height="64">
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <img class="button-svg" src="/static/Icons/Eagle/HD2-ENA.png" alt="HD2-E110" width="64" height="64">
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <img class="button-svg" src="/static/Icons/Eagle/HD2-ESR.png" alt="HD2-E110" width="64" height="64">
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <img class="button-svg" src="/static/Icons/Eagle/HD2-ESS.png" alt="HD2-E110" width="64" height="64">
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Emplacements/HD2-APM.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Emplacements/HD2-IM.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Emplacements/HD2-SG.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Emplacements/HD2-TT.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-EGB.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-O120.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-O380.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-OAS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-OES.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-OGS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-OL.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-OPS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-ORS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-OSS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Orbital/HD2-OWB.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Packs + Suits/HD2-BS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Packs + Suits/HD2-EXO.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Packs + Suits/HD2-GD.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Packs + Suits/HD2-GDR.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Packs + Suits/HD2-JP.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Packs + Suits/HD2-SGP.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Packs + Suits/HD2-SP.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Sentries/HD2-AS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Sentries/HD2-EMS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Sentries/HD2-GS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Sentries/HD2-HMG.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Sentries/HD2-MGS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Sentries/HD2-MS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Sentries/HD2-RS.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-AC.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-AMR.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-AT.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-EAT.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-FT.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-GL.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-HMG.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-LC.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-MG.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-QC.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-RG.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-RR.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-SPE.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
+      <div class="button-container" onclick="toggleStroke(this)">
+        <div class="background-square">
+          <svg class="button-svg" viewBox="0 0 64 64">
+              <image href="/static/Icons/Weapons/HD2-STA.png" width="64" height="64" style="border-radius: 10px;"/>
+          </svg>
+          <svg class="green-stroke" viewBox="0 0 64 64">
+            <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
+          </svg>
+        </div>
+      </div>
 
-<div class="grid-container">
-  <!-- Replace the 'src' attribute with the actual paths to your SVG images -->
-  <!-- Repeat this for all your images -->
-  <!-- Make sure you adjust the viewBox accordingly for your SVGs -->
-
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <img class="button-svg" src="/static/Icons/Eagle/HD2-E110.png" alt="HD2-E110" width="64" height="64">
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
+      <!-- Repeat this block for all your images -->
     </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-        <img class="button-svg" src="/static/Icons/Eagle/HD2-E500.png" alt="HD2-E110" width="64" height="64">
-      </svg>
-        <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <img class="button-svg" src="/static/Icons/Eagle/HD2-EA.png" alt="HD2-E110" width="64" height="64">
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <img class="button-svg" src="/static/Icons/Eagle/HD2-ECB.png" alt="HD2-E110" width="64" height="64">
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <img class="button-svg" src="/static/Icons/Eagle/HD2-ENA.png" alt="HD2-E110" width="64" height="64">
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <img class="button-svg" src="/static/Icons/Eagle/HD2-ESR.png" alt="HD2-E110" width="64" height="64">
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <img class="button-svg" src="/static/Icons/Eagle/HD2-ESS.png" alt="HD2-E110" width="64" height="64">
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Emplacements/HD2-APM.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Emplacements/HD2-IM.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Emplacements/HD2-SG.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Emplacements/HD2-TT.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-EGB.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-O120.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-O380.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-OAS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-OES.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-OGS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-OL.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-OPS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-ORS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-OSS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Orbital/HD2-OWB.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Packs + Suits/HD2-BS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Packs + Suits/HD2-EXO.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Packs + Suits/HD2-GD.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Packs + Suits/HD2-GDR.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Packs + Suits/HD2-JP.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Packs + Suits/HD2-SGP.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Packs + Suits/HD2-SP.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Sentries/HD2-AS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Sentries/HD2-EMS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Sentries/HD2-GS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Sentries/HD2-HMG.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Sentries/HD2-MGS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Sentries/HD2-MS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Sentries/HD2-RS.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-AC.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-AMR.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-AT.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-EAT.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-FT.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-GL.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-HMG.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-LC.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-MG.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-QC.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-RG.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-RR.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-SPE.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-  <div class="button-container" onclick="toggleStroke(this)">
-    <div class="background-square">
-      <svg class="button-svg" viewBox="0 0 64 64">
-          <image href="/static/Icons/Weapons/HD2-STA.png" width="64" height="64" style="border-radius: 10px;"/>
-      </svg>
-      <svg class="green-stroke" viewBox="0 0 64 64">
-        <rect width="100%" height="100%" fill="none" rx="10" ry="10"/>
-      </svg>
-    </div>
-  </div>
-
-  <!-- Repeat this block for all your images -->
-</div>
-
-<script>
-  function toggleStroke(element) {
-    element.classList.toggle('clicked');
-  }
-</script>
-
-</body>
+    <button id="save-button">Save Active Images</button>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
 </html>

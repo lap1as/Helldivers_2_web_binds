@@ -1,5 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import keyboard
+import json
 
 app = Flask(__name__)
 
@@ -20,6 +21,17 @@ def selection():
 def press_key(key):
     keyboard.press(key)
     return 'Key pressed: {}'.format(key)
+
+@app.route('/save_image_paths', methods=['POST'])
+def save_image_paths():
+    # Get the image paths from the request data
+    image_paths = request.get_json().get('imagePaths')
+
+    # Write the image paths to a file
+    with open('imagePaths.json', 'w') as f:
+        json.dump(image_paths, f)
+
+    return 'Success'
 
 
 if __name__ == '__main__':
