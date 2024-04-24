@@ -55,23 +55,90 @@ document.addEventListener("fullscreenchange", function () {
 // Select the save button
 const saveButton = document.querySelector('#save-button');
 
-// Add the event listener
-saveButton.addEventListener('click', function() {
-  // Select all active divs and extract their image paths
-  const imagePaths = Array.from(document.querySelectorAll('.button-container.clicked'))
-    .map(div => div.querySelector('image').getAttribute('href'));
+if (!saveButton) {
+  console.error('Save button not found');
+} else {
+  // Add the event listener
+  saveButton.addEventListener('click', function() {
+    // Select all clicked divs and extract their image paths
+    const clickedDivs = document.querySelectorAll('.button-container.clicked');
+    const imagePaths = Array.from(clickedDivs)
+      .map(div => {
+        const image = div.querySelector('img');
+        return image ? image.getAttribute('src') : null;
+      })
+      .filter(path => path !== null);
 
-  // Send a POST request to the Flask route
-  fetch('/save_image_paths', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ imagePaths }),
-  })
-  .then(response => response.text())
-  .then(data => console.log(data))
-  .catch((error) => {
-    console.error('Error:', error);
+    // Log the image paths
+    console.log('Image paths:', imagePaths);
+
+    // Send a POST request to the Flask route
+    fetch('/save_image_paths', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ imagePaths }),
+    })
+    .then(response => response.text())
+    .then(data => {
+      // Log the server response
+      console.log('Server response:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
   });
-});
+}
+// Select all clicked divs
+const clickedDivs = document.querySelectorAll('.button-container.clicked');
+console.log('Clicked divs:', clickedDivs);
+
+const imagePaths = Array.from(clickedDivs)
+  .map(div => {
+    // Select the image inside the div
+    const image = div.querySelector('img');
+    console.log('Image:', image);
+
+    return image ? image.getAttribute('src') : null;
+  })
+  .filter(path => path !== null);
+
+  // Select the remove button
+const removeButton = document.querySelector('#remove-button');
+
+if (!removeButton) {
+  console.error('Remove button not found');
+} else {
+  // Add the event listener
+  removeButton.addEventListener('click', function() {
+    // Select all clicked divs and extract their image paths
+    const clickedDivs = document.querySelectorAll('.button-container.clicked');
+    const imagePaths = Array.from(clickedDivs)
+      .map(div => {
+        const image = div.querySelector('img');
+        return image ? image.getAttribute('src') : null;
+      })
+      .filter(path => path !== null);
+
+    // Log the image paths
+    console.log('Image paths:', imagePaths);
+
+    // Send a POST request to the Flask route
+    fetch('/remove_image_paths', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ imagePaths }),
+    })
+    .then(response => response.text())
+    .then(data => {
+      // Log the server response
+      console.log('Server response:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  });
+}
