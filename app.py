@@ -22,6 +22,7 @@ def press_key(key):
     keyboard.press(key)
     return 'Key pressed: {}'.format(key)
 
+
 @app.route('/save_image_paths', methods=['POST'])
 def save_image_paths():
     # Get the image paths from the request data
@@ -31,6 +32,7 @@ def save_image_paths():
     with open('imagePaths.json', 'w') as f:
         json.dump(image_paths, f)
     return 'Success'
+
 
 @app.route('/remove_image_paths', methods=['POST'])
 def remove_image_paths():

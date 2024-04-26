@@ -104,16 +104,22 @@ const imagePaths = Array.from(clickedDivs)
   })
   .filter(path => path !== null);
 
-  // Select the remove button
-const removeButton = document.querySelector('#remove-button');
 
-if (!removeButton) {
+// Select the remove button
+const resetButton = document.querySelector('#reset-button');
+
+if (!resetButton) {
   console.error('Remove button not found');
 } else {
   // Add the event listener
-  removeButton.addEventListener('click', function() {
-    // Select all clicked divs and extract their image paths
+  resetButton.addEventListener('click', function() {
+    // Remove the 'clicked' class from all clicked divs
     const clickedDivs = document.querySelectorAll('.button-container.clicked');
+    clickedDivs.forEach(div => {
+      div.classList.remove('clicked');
+    });
+
+    // Select all clicked divs and extract their image paths
     const imagePaths = Array.from(clickedDivs)
       .map(div => {
         const image = div.querySelector('img');
@@ -124,7 +130,7 @@ if (!removeButton) {
     // Log the image paths
     console.log('Image paths:', imagePaths);
 
-    // Send a POST request to the Flask route
+    // Send a POST request to the Flask route to remove image paths
     fetch('/remove_image_paths', {
       method: 'POST',
       headers: {
