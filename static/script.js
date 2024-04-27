@@ -1,6 +1,6 @@
-function pressKey(key) {
+/*function pressKey(key) {
     fetch('/press_key/' + key);
-}
+}*/
 
 function toggleStroke(element) {
     element.classList.toggle('clicked');
@@ -53,98 +53,56 @@ document.addEventListener("fullscreenchange", function () {
 });
 
 // Select the save button
-const saveButton = document.querySelector('#save-button');
-
-if (!saveButton) {
-  console.error('Save button not found');
-} else {
-  // Add the event listener
-  saveButton.addEventListener('click', function() {
-    // Select all clicked divs and extract their image paths
+// Function to save clicked divs' image paths
+function saveImagePaths() {
+    // Select all clicked divs
     const clickedDivs = document.querySelectorAll('.button-container.clicked');
-    const imagePaths = Array.from(clickedDivs)
-      .map(div => {
+
+    // Extract image paths from clicked divs
+    const imagePaths = Array.from(clickedDivs).map(div => {
         const image = div.querySelector('img');
         return image ? image.getAttribute('src') : null;
-      })
-      .filter(path => path !== null);
+    }).filter(path => path !== null);
 
     // Log the image paths
     console.log('Image paths:', imagePaths);
 
-    // Send a POST request to the Flask route
+    // Send a POST request to the server to save image paths
     fetch('/save_image_paths', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ imagePaths }),
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ imagePaths }),
     })
     .then(response => response.text())
     .then(data => {
-      // Log the server response
-      console.log('Server response:', data);
+        // Log the server response
+        console.log('Server response:', data);
     })
     .catch((error) => {
-      console.error('Error:', error);
+        console.error('Error:', error);
     });
-  });
 }
-// Select all clicked divs
-const clickedDivs = document.querySelectorAll('.button-container.clicked');
-console.log('Clicked divs:', clickedDivs);
 
-const imagePaths = Array.from(clickedDivs)
-  .map(div => {
-    // Select the image inside the div
-    const image = div.querySelector('img');
-    console.log('Image:', image);
-
-    return image ? image.getAttribute('src') : null;
-  })
-  .filter(path => path !== null);
-
-
-// Select the remove button
-const resetButton = document.querySelector('#reset-button');
-
-if (!resetButton) {
-  console.error('Remove button not found');
+// Event listener for the save button
+const saveButton = document.querySelector('#save-button');
+if (saveButton) {
+    saveButton.addEventListener('click', saveImagePaths);
 } else {
-  // Add the event listener
-  resetButton.addEventListener('click', function() {
-    // Remove the 'clicked' class from all clicked divs
-    const clickedDivs = document.querySelectorAll('.button-container.clicked');
-    clickedDivs.forEach(div => {
-      div.classList.remove('clicked');
+    console.error('Save button not found');
+}
+
+// Event listener for the reset button
+const resetButton = document.querySelector('#reset-button');
+if (resetButton) {
+    resetButton.addEventListener('click', () => {
+        // Remove the 'clicked' class from all clicked divs
+        const clickedDivs = document.querySelectorAll('.button-container.clicked');
+        clickedDivs.forEach(div => {
+            div.classList.remove('clicked');
+        });
     });
-
-    // Select all clicked divs and extract their image paths
-    const imagePaths = Array.from(clickedDivs)
-      .map(div => {
-        const image = div.querySelector('img');
-        return image ? image.getAttribute('src') : null;
-      })
-      .filter(path => path !== null);
-
-    // Log the image paths
-    console.log('Image paths:', imagePaths);
-
-    // Send a POST request to the Flask route to remove image paths
-    fetch('/remove_image_paths', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ imagePaths }),
-    })
-    .then(response => response.text())
-    .then(data => {
-      // Log the server response
-      console.log('Server response:', data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-  });
+} else {
+    console.error('Reset button not found');
 }
