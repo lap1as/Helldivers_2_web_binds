@@ -124,10 +124,10 @@ function generateButton() {
 const testButton = document.querySelector('#test-button');
 if (testButton) {
     testButton.addEventListener('click', () => {
-        fetch('/static/divConfig/imagePaths.json')
+        fetch('static/divConfig/imagePaths.json')
             .then(response => response.json())
             .then(data => {
-                console.log(data); // Log the data to the console
+                alert(data) // Log the data to the console
             })
             .catch((error) => {
                 console.error('Error:', error);
