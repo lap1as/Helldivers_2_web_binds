@@ -53,20 +53,24 @@ document.addEventListener("fullscreenchange", function () {
 });
 
 // Select the save button
-// Function to save clicked divs' image paths
-function saveImagePaths() {
+// Function to save clicked divs image paths
+function collectImagePaths() {
     // Select all clicked divs
     const clickedDivs = document.querySelectorAll('.button-container.clicked');
 
     // Extract image paths from clicked divs
     const imagePaths = Array.from(clickedDivs).map(div => {
         const image = div.querySelector('img');
-        return image ? image.getAttribute('src') : null;
+        return image ? image.getAttribute('alt') : null;
     }).filter(path => path !== null);
 
     // Log the image paths
     console.log('Image paths:', imagePaths);
 
+    return imagePaths;
+}
+
+function sendImagePaths(imagePaths) {
     // Send a POST request to the server to save image paths
     fetch('/save_image_paths', {
         method: 'POST',
@@ -83,6 +87,12 @@ function saveImagePaths() {
     .catch((error) => {
         console.error('Error:', error);
     });
+}
+
+function saveImagePaths() {
+    const imagePaths = collectImagePaths();
+    sendImagePaths(imagePaths);
+    return imagePaths;
 }
 
 // Event listener for the save button
@@ -105,4 +115,22 @@ if (resetButton) {
     });
 } else {
     console.error('Reset button not found');
+}
+
+//Generate a button from saved image paths
+function generateButton() {
+    const div = document.querySelector('.selected-buttons-grid');
+}
+const testButton = document.querySelector('#test-button');
+if (testButton) {
+    testButton.addEventListener('click', () => {
+        fetch('/static/divConfig/imagePaths.json')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data); // Log the data to the console
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    });
 }

@@ -28,31 +28,9 @@ def save_image_paths():
     # Get the image paths from the request data
     image_paths = request.get_json().get('imagePaths')
 
-    # Write the image paths to a file
-    with open('imagePaths.json', 'w') as f:
+    # Write the image paths to a file in the static directory
+    with open('static/divConfig/imagePaths.json', 'w') as f:
         json.dump(image_paths, f)
-    return 'Success'
-
-
-@app.route('/remove_image_paths', methods=['POST'])
-def remove_image_paths():
-    # Get the image paths from the request data
-    data = request.get_json()
-    image_paths_to_remove = data.get('imagePaths', [])
-
-    # Read the existing data from the file
-    with open('imagePaths.json', 'r') as f:
-        try:
-            existing_data = json.load(f)
-        except json.JSONDecodeError:
-            existing_data = []
-
-    # Remove the image paths
-    existing_data = [path for path in existing_data if path not in image_paths_to_remove]
-
-    # Write the data back to the file
-    with open('imagePaths.json', 'w') as f:
-        json.dump(existing_data, f)
     return 'Success'
 
 
