@@ -61,7 +61,7 @@ function collectImagePaths() {
     // Extract image paths from clicked divs
     const imagePaths = Array.from(clickedDivs).map(div => {
         const image = div.querySelector('img');
-        return image ? image.getAttribute('alt') : null;
+        return image ? image.getAttribute('src') : null;
     }).filter(path => path !== null);
 
     // Log the image paths
@@ -133,4 +133,60 @@ if (testButton) {
                 console.error('Error:', error);
             });
     });
+}
+window.onload = function() {
+    fetch('/static/divConfig/imagePaths.json')
+        .then(response => response.json())
+        .then(data => {
+            // Select the .selected-buttons-grid div
+            const container = document.querySelector('.default-buttons-grid');
+
+            // Iterate over the data
+            data.forEach(imagePath => {
+                // Create a new div element
+                const div = document.createElement('div');
+                div.className = 'button-container';
+                div.setAttribute('onclick', 'toggleStroke(this)');
+
+                // Create a new div for the background square
+                const backgroundSquare = document.createElement('div');
+                backgroundSquare.className = 'background-square';
+
+                // Create a new img element
+                const img = document.createElement('img');
+                img.className = 'button-svg';
+                img.src = imagePath; // Set the src attribute to the image path
+                img.alt = imagePath.split('.')[0]; // Set the alt attribute to the image name without the .png extension
+                img.width = '64';
+                img.height = '64';
+
+                // Create a new svg element
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('viewBox', '0 0 64 64');
+
+                // Create a new rect element
+                const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                rect.setAttribute('width', '100%');
+                rect.setAttribute('height', '100%');
+                rect.setAttribute('fill', 'none');
+                rect.setAttribute('rx', '10');
+                rect.setAttribute('ry', '10');
+
+                // Append the rect to the svg
+                svg.appendChild(rect);
+
+                // Append the img and svg to the background square
+                backgroundSquare.appendChild(img);
+                backgroundSquare.appendChild(svg);
+
+                // Append the background square to the div
+                div.appendChild(backgroundSquare);
+
+                // Append the div to the .selected-buttons-grid container
+                container.appendChild(div);
+            });
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
 }
