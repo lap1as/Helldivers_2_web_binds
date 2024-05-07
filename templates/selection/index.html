@@ -516,9 +516,11 @@
 ~
       <!-- Repeat this block for all your images -->
     </div>
-    <button id="save-button">Save Stratagems</button>
-    <button id="reset-button">Reset Selection</button>
-    <button id="test-button">Test</button>
+    <div class="center-div">
+        <button id="save-button">Save Stratagems</button>
+        <button id="reset-button">Reset Selection</button>
+        <button id="back-button" onclick="window.location.href='/'">Back to Main Page</button>
+    </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>

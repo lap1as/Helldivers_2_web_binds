@@ -1,0 +1,307 @@
+[
+    {
+        "name": "Reinforce",
+        "bind": "W, S, D, A, W",
+        "coolS": 60
+    },
+    {
+        "name": "SOS Beacon",
+        "bind": "W, S, D, W",
+        "coolS": 45
+    },
+    {
+        "name": "ResWply",
+        "bind": "S, S, W, D",
+        "coolS": 60
+    },
+    {
+        "name": "Eagle Rearm",
+        "bind": "W, W, A, W, D",
+        "coolS": 60
+    },
+    {
+        "name": "SEAF Artillery",
+        "bind": "A, W, W, S",
+        "coolS": 90
+    },
+    {
+        "name": "SSSD Delivery",
+        "bind": "S, S, S, W, W",
+        "coolS": 90
+    },
+    {
+        "name": "Wload Data",
+        "bind": "A, D, W, W, W",
+        "coolS": 90
+    },
+    {
+        "name": "Hellbomb",
+        "bind": "W, S, A, S, W, D, S, W",
+        "coolS": 90
+    },
+    {
+        "name": "Seismic Probe",
+        "bind": "W, W, A, D, S, S",
+        "coolS": 60
+    },
+    {
+        "name": "Prospecting Drill",
+        "bind": "S, S, A, D, S, S",
+        "coolS": 90
+    },
+    {
+        "name": "SWer Earth Flag",
+        "bind": "S, W, S, W",
+        "coolS": 45
+    },
+    {
+        "name": "Machine Gun",
+        "bind": "S, A, S, W, D",
+        "coolS": 480
+    },
+    {
+        "name": "Anti-Material Rifle",
+        "bind": "S, A, D, W, S",
+        "coolS": 480
+    },
+    {
+        "name": "Stalwart",
+        "bind": "S, A, S, W, W, A",
+        "coolS": 480
+    },
+    {
+        "name": "Expendable Anti-Tank",
+        "bind": "S, S, A, W, D",
+        "coolS": 70
+    },
+    {
+        "name": "Recoiled Rifle",
+        "bind": "S, A, D, D, A",
+        "coolS": 480
+    },
+    {
+        "name": "Flamethrower",
+        "bind": "S, A, W, S, W",
+        "coolS": 480
+    },
+    {
+        "name": "Autocannon",
+        "bind": "S, A, S, W, W, D",
+        "coolS": 480
+    },
+    {
+        "name": "Heavy Machine Gun",
+        "bind": "S, A, W, S, S",
+        "coolS": 480
+    },
+    {
+        "name": "Railgun",
+        "bind": "S, D, A, S, W, A, D",
+        "coolS": 480
+    },
+    {
+        "name": "Spear",
+        "bind": "S, S, W, S, S",
+        "coolS": 480
+    },
+    {
+        "name": "Orbital Gatling Barrage",
+        "bind": "D, S, A, W, W",
+        "coolS": 80
+    },
+    {
+        "name": "Orbital Airburst Strike",
+        "bind": "D, D, D",
+        "coolS": 120
+    },
+    {
+        "name": "Orbital 120MM HE Barrage",
+        "bind": "D, S, A, D, S",
+        "coolS": 240
+    },
+    {
+        "name": "Orbital 380MM HE Barrage",
+        "bind": "D, S, W, W, A, S, S",
+        "coolS": 240
+    },
+    {
+        "name": "Orbital Walking Barrage",
+        "bind": "D, D, S, A, D, S",
+        "coolS": 240
+    },
+    {
+        "name": "Orbital Lasers",
+        "bind": "D, S, W, D, S",
+        "coolS": 300
+    },
+    {
+        "name": "Orbital Railcannon Strike",
+        "bind": "D, W, S, S, D",
+        "coolS": 210
+    },
+    {
+        "name": "Eagle Strafing Run",
+        "bind": "W, D, D",
+        "coolS": 75
+    },
+    {
+        "name": "Eagle Airstrike",
+        "bind": "W, D, S, D",
+        "coolS": 8
+    },
+    {
+        "name": "Eagle Cluster Bomb",
+        "bind": "W, D, S, S, D",
+        "coolS": 8
+    },
+    {
+        "name": "Eagle Napalm Airstrike",
+        "bind": "W, D, S, W",
+        "coolS": 8
+    },
+    {
+        "name": "Jump Pack",
+        "bind": "S, W, W, S, W",
+        "coolS": 480
+    },
+    {
+        "name": "Eagle Smoke Strike",
+        "bind": "W, D, W, S",
+        "coolS": 8
+    },
+    {
+        "name": "Eagle 110MM Rocket Pods",
+        "bind": "W, D, W, A",
+        "coolS": 8
+    },
+    {
+        "name": "Eagle 500KG Bomb",
+        "bind": "W, D, S, S, S",
+        "coolS": 8
+    },
+    {
+        "name": "Orbital Precision Strike",
+        "bind": "D, D, W",
+        "coolS": 100
+    },
+    {
+        "name": "Orbital Gas Strike",
+        "bind": "D, D, S, D",
+        "coolS": 75
+    },
+    {
+        "name": "Orbital EMS Strike",
+        "bind": "D, D, A, S",
+        "coolS": 75
+    },
+    {
+        "name": "Orbital Smoke Strike",
+        "bind": "D, D, S, W",
+        "coolS": 100
+    },
+    {
+        "name": "HMG Emplacement",
+        "bind": "S, W, A, D, D, A",
+        "coolS": 180
+    },
+    {
+        "name": "Shield Generation Relay",
+        "bind": "S, W, A, S, D, D",
+        "coolS": 90
+    },
+    {
+        "name": "Tesla Tower",
+        "bind": "S, W, D, W, A, D",
+        "coolS": 150
+    },
+    {
+        "name": "Anti-Personnel Minefield",
+        "bind": "S, A, W, D",
+        "coolS": 180
+    },
+    {
+        "name": "SWply Pack",
+        "bind": "S, A, S, W, W, S",
+        "coolS": 480
+    },
+    {
+        "name": "Grenade Launcher",
+        "bind": "S, A, W, A, S",
+        "coolS": 480
+    },
+    {
+        "name": "Laser Cannon",
+        "bind": "S, A, S, W, A",
+        "coolS": 480
+    },
+    {
+        "name": "Incendiary Mines",
+        "bind": "S, A, A, S",
+        "coolS": 180
+    },
+    {
+        "name": "Guard Dog-Rover",
+        "bind": "S, W, A, W, D, D",
+        "coolS": 480
+    },
+    {
+        "name": "Ballistic Shield Backpack",
+        "bind": "S, A, W, W, D",
+        "coolS": 300
+    },
+    {
+        "name": "Arc Thrower",
+        "bind": "S, D, W, A, S",
+        "coolS": 480
+    },
+    {
+        "name": "Quasar Cannon",
+        "bind": "S, W, A, D, A, D",
+        "coolS": 480
+    },
+    {
+        "name": "Shield Generator Pack",
+        "bind": "S, W, A, D, A, D",
+        "coolS": 480
+    },
+    {
+        "name": "Machine Gun Sentry",
+        "bind": "S, W, D, D, W",
+        "coolS": 180
+    },
+    {
+        "name": "Gatling Sentry",
+        "bind": "S, W, D, A",
+        "coolS": 180
+    },
+    {
+        "name": "Mortar Sentry",
+        "bind": "S, W, D, D, S",
+        "coolS": 180
+    },
+    {
+        "name": "Guard Dog",
+        "bind": "S, W, A, W, D, S",
+        "coolS": 480
+    },
+    {
+        "name": "Autocannon Sentry",
+        "bind": "S, W, D, W, A, W",
+        "coolS": 180
+    },
+    {
+        "name": "Rocket Sentry",
+        "bind": "S, W, D, D, A",
+        "coolS": 180
+    },
+    {
+        "name": "EMS Mortar Sentry",
+        "bind": "S, S, W, W, A",
+        "coolS": 180
+    },
+    {
+        "name": "Patriot Exosuit",
+        "bind": "A, S, D, W, A, S, S",
+        "coolS": 600
+    }
+]

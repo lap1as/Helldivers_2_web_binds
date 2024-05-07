@@ -3,6 +3,16 @@
 }*/
 
 function toggleStroke(element) {
+    // Get all currently selected elements
+    const selectedElements = document.querySelectorAll('.button-container.clicked');
+
+    // If there are already 30 selected elements and the current one is not selected, return
+    if (selectedElements.length >= 30 && !element.classList.contains('clicked')) {
+        alert('You can only select up to 30 images')
+        return;
+    }
+
+    // Otherwise, toggle the 'clicked' class as usual
     element.classList.toggle('clicked');
 }
 
@@ -120,19 +130,6 @@ if (resetButton) {
 //Generate a button from saved image paths
 function generateButton() {
     const div = document.querySelector('.selected-buttons-grid');
-}
-const testButton = document.querySelector('#test-button');
-if (testButton) {
-    testButton.addEventListener('click', () => {
-        fetch('static/divConfig/imagePaths.json')
-            .then(response => response.json())
-            .then(data => {
-                alert(data) // Log the data to the console
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
-    });
 }
 window.onload = function() {
     fetch('/static/divConfig/imagePaths.json')
