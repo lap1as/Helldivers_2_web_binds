@@ -1,0 +1,307 @@
+[
+    {
+        "name": "Reinforce",
+        "bind": "Up, Down, Right, Left, Up",
+        "cooldown": 60
+    },
+    {
+        "name": "SOS Beacon",
+        "bind": "Up, Down, Right, Up",
+        "cooldown": 45
+    },
+    {
+        "name": "Resupply",
+        "bind": "Down, Down, Up, Right",
+        "cooldown": 60
+    },
+    {
+        "name": "Eagle Rearm",
+        "bind": "Up, Up, Left, Up, Right",
+        "cooldown": 60
+    },
+    {
+        "name": "SEAF Artillery",
+        "bind": "Left, Up, Up, Down",
+        "cooldown": 90
+    },
+    {
+        "name": "SSSD Delivery",
+        "bind": "Down, Down, Down, Up, Up",
+        "cooldown": 90
+    },
+    {
+        "name": "Upload Data",
+        "bind": "Left, Right, Up, Up, Up",
+        "cooldown": 90
+    },
+    {
+        "name": "Hellbomb",
+        "bind": "Up, Down, Left, Down, Up, Right, Down, Up",
+        "cooldown": 90
+    },
+    {
+        "name": "Seismic Probe",
+        "bind": "Up, Up, Left, Right, Down, Down",
+        "cooldown": 60
+    },
+    {
+        "name": "Prospecting Drill",
+        "bind": "Down, Down, Left, Right, Down, Down",
+        "cooldown": 90
+    },
+    {
+        "name": "Super Earth Flag",
+        "bind": "Down, Up, Down, Up",
+        "cooldown": 45
+    },
+    {
+        "name": "Machine Gun",
+        "bind": "Down, Left, Down, Up, Right",
+        "cooldown": 480
+    },
+    {
+        "name": "Anti-Material Rifle",
+        "bind": "Down, Left, Right, Up, Down",
+        "cooldown": 480
+    },
+    {
+        "name": "Stalwart",
+        "bind": "Down, Left, Down, Up, Up, Left",
+        "cooldown": 480
+    },
+    {
+        "name": "Expendable Anti-Tank",
+        "bind": "Down, Down, Left, Up, Right",
+        "cooldown": 70
+    },
+    {
+        "name": "Recoiled Rifle",
+        "bind": "Down, Left, Right, Right, Left",
+        "cooldown": 480
+    },
+    {
+        "name": "Flamethrower",
+        "bind": "Down, Left, Up, Down, Up",
+        "cooldown": 480
+    },
+    {
+        "name": "Autocannon",
+        "bind": "Down, Left, Down, Up, Up, Right",
+        "cooldown": 480
+    },
+    {
+        "name": "Heavy Machine Gun",
+        "bind": "Down, Left, Up, Down, Down",
+        "cooldown": 480
+    },
+    {
+        "name": "Railgun",
+        "bind": "Down, Right, Left, Down, Up, Left, Right",
+        "cooldown": 480
+    },
+    {
+        "name": "Spear",
+        "bind": "Down, Down, Up, Down, Down",
+        "cooldown": 480
+    },
+    {
+        "name": "Orbital Gatling Barrage",
+        "bind": "Right, Down, Left, Up, Up",
+        "cooldown": 80
+    },
+    {
+        "name": "Orbital Airburst Strike",
+        "bind": "Right, Right, Right",
+        "cooldown": 120
+    },
+    {
+        "name": "Orbital 120MM HE Barrage",
+        "bind": "Right, Down, Left, Right, Down",
+        "cooldown": 240
+    },
+    {
+        "name": "Orbital 380MM HE Barrage",
+        "bind": "Right, Down, Up, Up, Left, Down, Down",
+        "cooldown": 240
+    },
+    {
+        "name": "Orbital Walking Barrage",
+        "bind": "Right, Right, Down, Left, Right, Down",
+        "cooldown": 240
+    },
+    {
+        "name": "Orbital Lasers",
+        "bind": "Right, Down, Up, Right, Down",
+        "cooldown": 300
+    },
+    {
+        "name": "Orbital Railcannon Strike",
+        "bind": "Right, Up, Down, Down, Right",
+        "cooldown": 210
+    },
+    {
+        "name": "Eagle Strafing Run",
+        "bind": "Up, Right, Right",
+        "cooldown": 75
+    },
+    {
+        "name": "Eagle Airstrike",
+        "bind": "Up, Right, Down, Right",
+        "cooldown": 8
+    },
+    {
+        "name": "Eagle Cluster Bomb",
+        "bind": "Up, Right, Down, Down, Right",
+        "cooldown": 8
+    },
+    {
+        "name": "Eagle Napalm Airstrike",
+        "bind": "Up, Right, Down, Up",
+        "cooldown": 8
+    },
+    {
+        "name": "Jump Pack",
+        "bind": "Down, Up, Up, Down, Up",
+        "cooldown": 480
+    },
+    {
+        "name": "Eagle Smoke Strike",
+        "bind": "Up, Right, Up, Down",
+        "cooldown": 8
+    },
+    {
+        "name": "Eagle 110MM Rocket Pods",
+        "bind": "Up, Right, Up, Left",
+        "cooldown": 8
+    },
+    {
+        "name": "Eagle 500KG Bomb",
+        "bind": "Up, Right, Down, Down, Down",
+        "cooldown": 8
+    },
+    {
+        "name": "Orbital Precision Strike",
+        "bind": "Right, Right, Up",
+        "cooldown": 100
+    },
+    {
+        "name": "Orbital Gas Strike",
+        "bind": "Right, Right, Down, Right",
+        "cooldown": 75
+    },
+    {
+        "name": "Orbital EMS Strike",
+        "bind": "Right, Right, Left, Down",
+        "cooldown": 75
+    },
+    {
+        "name": "Orbital Smoke Strike",
+        "bind": "Right, Right, Down, Up",
+        "cooldown": 100
+    },
+    {
+        "name": "HMG Emplacement",
+        "bind": "Down, Up, Left, Right, Right, Left",
+        "cooldown": 180
+    },
+    {
+        "name": "Shield Generation Relay",
+        "bind": "Down, Up, Left, Down, Right, Right",
+        "cooldown": 90
+    },
+    {
+        "name": "Tesla Tower",
+        "bind": "Down, Up, Right, Up, Left, Right",
+        "cooldown": 150
+    },
+    {
+        "name": "Anti-Personnel Minefield",
+        "bind": "Down, Left, Up, Right",
+        "cooldown": 180
+    },
+    {
+        "name": "Supply Pack",
+        "bind": "Down, Left, Down, Up, Up, Down",
+        "cooldown": 480
+    },
+    {
+        "name": "Grenade Launcher",
+        "bind": "Down, Left, Up, Left, Down",
+        "cooldown": 480
+    },
+    {
+        "name": "Laser Cannon",
+        "bind": "Down, Left, Down, Up, Left",
+        "cooldown": 480
+    },
+    {
+        "name": "Incendiary Mines",
+        "bind": "Down, Left, Left, Down",
+        "cooldown": 180
+    },
+    {
+        "name": "Guard Dog-Rover",
+        "bind": "Down, Up, Left, Up, Right, Right",
+        "cooldown": 480
+    },
+    {
+        "name": "Ballistic Shield Backpack",
+        "bind": "Down, Left, Up, Up, Right",
+        "cooldown": 300
+    },
+    {
+        "name": "Arc Thrower",
+        "bind": "Down, Right, Up, Left, Down",
+        "cooldown": 480
+    },
+    {
+        "name": "Quasar Cannon",
+        "bind": "Down, Up, Left, Right, Left, Right",
+        "cooldown": 480
+    },
+    {
+        "name": "Shield Generator Pack",
+        "bind": "Down, Up, Left, Right, Left, Right",
+        "cooldown": 480
+    },
+    {
+        "name": "Machine Gun Sentry",
+        "bind": "Down, Up, Right, Right, Up",
+        "cooldown": 180
+    },
+    {
+        "name": "Gatling Sentry",
+        "bind": "Down, Up, Right, Left",
+        "cooldown": 180
+    },
+    {
+        "name": "Mortar Sentry",
+        "bind": "Down, Up, Right, Right, Down",
+        "cooldown": 180
+    },
+    {
+        "name": "Guard Dog",
+        "bind": "Down, Up, Left, Up, Right, Down",
+        "cooldown": 480
+    },
+    {
+        "name": "Autocannon Sentry",
+        "bind": "Down, Up, Right, Up, Left, Up",
+        "cooldown": 180
+    },
+    {
+        "name": "Rocket Sentry",
+        "bind": "Down, Up, Right, Right, Left",
+        "cooldown": 180
+    },
+    {
+        "name": "EMS Mortar Sentry",
+        "bind": "Down, Down, Up, Up, Left",
+        "cooldown": 180
+    },
+    {
+        "name": "Patriot Exosuit",
+        "bind": "Left, Down, Right, Up, Left, Down, Down",
+        "cooldown": 600
+    }
+]
