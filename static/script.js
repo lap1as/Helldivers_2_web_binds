@@ -5,9 +5,10 @@
 function toggleStroke(element) {
     // Get all currently selected elements
     const selectedElements = document.querySelectorAll('.button-container.clicked');
+    console.log(selectedElements)
 
     // If there are already 30 selected elements and the current one is not selected, return
-    if (selectedElements.length >= 30 && !element.classList.contains('clicked')) {
+    if (selectedElements.length >= 29 && !element.classList.contains('clicked')) {
         alert('You can only select up to 30 images')
         return;
     }
@@ -142,8 +143,19 @@ window.onload = function() {
             data.forEach(imagePath => {
                 // Create a new div element
                 const div = document.createElement('div');
+                const name = imagePath.split('/').slice(-1)[0].split('.')[0];
                 div.className = 'button-container';
-                div.setAttribute('onclick', 'toggleStroke(this)');
+                div.classList.add(name);
+                // Add an event listener to the div
+                div.addEventListener('click', function() {
+                    // Get the stratagem name from the alt attribute of the img
+                    const stratagemName = img.alt;
+
+                    // Send a request to the /press_stratagem/<stratagem_name> endpoint
+                    fetch('/press_stratagem/' + stratagemName)
+                        .then(response => response.text())
+                        .then(message => console.log(message));
+                });
 
                 // Create a new div for the background square
                 const backgroundSquare = document.createElement('div');
@@ -153,7 +165,7 @@ window.onload = function() {
                 const img = document.createElement('img');
                 img.className = 'button-svg';
                 img.src = imagePath; // Set the src attribute to the image path
-                img.alt = imagePath.split('.')[0]; // Set the alt attribute to the image name without the .png extension
+                img.alt = name // Set the alt attribute to the image name without the .png extension
                 img.width = '64';
                 img.height = '64';
 
@@ -186,4 +198,5 @@ window.onload = function() {
         .catch((error) => {
             console.error('Error:', error);
         });
+
 }

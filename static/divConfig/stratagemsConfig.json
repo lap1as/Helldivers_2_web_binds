@@ -1,307 +1,374 @@
 [
     {
-        "name": "Reinforce",
-        "bind": "W, S, D, A, W",
-        "coolS": 60
+        "name": "HD2-Reinforcement",
+        "bind": "w, s, d, a, w",
+        "cooldown": 60,
+        "usages": 1
     },
     {
-        "name": "SOS Beacon",
-        "bind": "W, S, D, W",
-        "coolS": 45
+        "name": "HD2-SOS",
+        "bind": "w, s, d, w",
+        "cooldown": 45,
+        "usages": 1
     },
     {
-        "name": "ResWply",
-        "bind": "S, S, W, D",
-        "coolS": 60
+        "name": "HD2-Resupply",
+        "bind": "s, s, w, d",
+        "cooldown": 60,
+        "usages": 1
     },
     {
-        "name": "Eagle Rearm",
-        "bind": "W, W, A, W, D",
-        "coolS": 60
+        "name": "HD2-ERA",
+        "bind": "w, w, a, w, d",
+        "cooldown": 60,
+        "usages": 1
     },
     {
-        "name": "SEAF Artillery",
-        "bind": "A, W, W, S",
-        "coolS": 90
+        "name": "HD2-SEAF",
+        "bind": "a, w, w, s",
+        "cooldown": 90,
+        "usages": 1
     },
     {
-        "name": "SSSD Delivery",
-        "bind": "S, S, S, W, W",
-        "coolS": 90
+        "name": "HD2-Upload-SSSD",
+        "bind": "s, s, s, w, w",
+        "cooldown": 90,
+        "usages": 1
     },
     {
-        "name": "Wload Data",
-        "bind": "A, D, W, W, W",
-        "coolS": 90
+        "name": "HD2-Upload",
+        "bind": "a, d, w, w, w",
+        "cooldown": 90,
+        "usages": 1
     },
     {
-        "name": "Hellbomb",
-        "bind": "W, S, A, S, W, D, S, W",
-        "coolS": 90
+        "name": "HD2-Hellbomb",
+        "bind": "w, s, a, s, w, d, s, w",
+        "cooldown": 90,
+        "usages": 1
     },
     {
-        "name": "Seismic Probe",
-        "bind": "W, W, A, D, S, S",
-        "coolS": 60
+        "name": "HD2-Seismic-Probe",
+        "bind": "w, w, a, d, s, s",
+        "cooldown": 60,
+        "usages": 1
     },
     {
-        "name": "Prospecting Drill",
-        "bind": "S, S, A, D, S, S",
-        "coolS": 90
+        "name": "HD2-PD",
+        "bind": "s, s, a, d, s, s",
+        "cooldown": 90,
+        "usages": 1
     },
     {
-        "name": "SWer Earth Flag",
-        "bind": "S, W, S, W",
-        "coolS": 45
+        "name": "HD2-EF",
+        "bind": "s, w, s, w",
+        "cooldown": 45,
+        "usages": 1
     },
     {
-        "name": "Machine Gun",
-        "bind": "S, A, S, W, D",
-        "coolS": 480
+        "name": "HD2-MG",
+        "bind": "s, a, s, w, d",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Anti-Material Rifle",
-        "bind": "S, A, D, W, S",
-        "coolS": 480
+        "name": "HD2-AMR",
+        "bind": "s, a, d, w, s",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Stalwart",
-        "bind": "S, A, S, W, W, A",
-        "coolS": 480
+        "name": "HD2-STA",
+        "bind": "s, a, s, w, w, a",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Expendable Anti-Tank",
-        "bind": "S, S, A, W, D",
-        "coolS": 70
+        "name": "HD2-EAT",
+        "bind": "s, s, a, w, d",
+        "cooldown": 70,
+        "usages": 1
     },
     {
-        "name": "Recoiled Rifle",
-        "bind": "S, A, D, D, A",
-        "coolS": 480
+        "name": "HD2-RR",
+        "bind": "s, a, d, d, a",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Flamethrower",
-        "bind": "S, A, W, S, W",
-        "coolS": 480
+        "name": "HD2-FT",
+        "bind": "s, a, w, s, w",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Autocannon",
-        "bind": "S, A, S, W, W, D",
-        "coolS": 480
+        "name": "HD2-AC",
+        "bind": "s, a, s, w, w, d",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Heavy Machine Gun",
-        "bind": "S, A, W, S, S",
-        "coolS": 480
+        "name": "HD2-HMG",
+        "bind": "s, a, w, s, s",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Railgun",
-        "bind": "S, D, A, S, W, A, D",
-        "coolS": 480
+        "name": "HD2-RG",
+        "bind": "s, d, a, s, w, a, d",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Spear",
-        "bind": "S, S, W, S, S",
-        "coolS": 480
+        "name": "HD2-SPE",
+        "bind": "s, s, w, s, s",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Orbital Gatling Barrage",
-        "bind": "D, S, A, W, W",
-        "coolS": 80
+        "name": "HD2-EGB",
+        "bind": "d, s, a, w, w",
+        "cooldown": 80,
+        "usages": 1
     },
     {
-        "name": "Orbital Airburst Strike",
-        "bind": "D, D, D",
-        "coolS": 120
+        "name": "HD2-ENA",
+        "bind": "w,d,s,a",
+        "cooldown": 15,
+        "usages": 1
     },
     {
-        "name": "Orbital 120MM HE Barrage",
-        "bind": "D, S, A, D, S",
-        "coolS": 240
+        "name": "HD2-OAS",
+        "bind": "d, d, d",
+        "cooldown": 120,
+        "usages": 1
     },
     {
-        "name": "Orbital 380MM HE Barrage",
-        "bind": "D, S, W, W, A, S, S",
-        "coolS": 240
+        "name": "HD2-O120",
+        "bind": "d, s, a, d, s",
+        "cooldown": 240,
+        "usages": 1
     },
     {
-        "name": "Orbital Walking Barrage",
-        "bind": "D, D, S, A, D, S",
-        "coolS": 240
+        "name": "HD2-O380",
+        "bind": "d, s, w, w, a, s, s",
+        "cooldown": 240,
+        "usages": 1
     },
     {
-        "name": "Orbital Lasers",
-        "bind": "D, S, W, D, S",
-        "coolS": 300
+        "name": "HD2-OWB",
+        "bind": "d, d, s, a, d, s",
+        "cooldown": 240,
+        "usages": 1
     },
     {
-        "name": "Orbital Railcannon Strike",
-        "bind": "D, W, S, S, D",
-        "coolS": 210
+        "name": "HD2-OL",
+        "bind": "d, s, w, d, s",
+        "cooldown": 300,
+        "usages": 1
     },
     {
-        "name": "Eagle Strafing Run",
-        "bind": "W, D, D",
-        "coolS": 75
+        "name": "HD2-ORS",
+        "bind": "d, w, s, s, d",
+        "cooldown": 210,
+        "usages": 1
     },
     {
-        "name": "Eagle Airstrike",
-        "bind": "W, D, S, D",
-        "coolS": 8
+        "name": "HD2-ESR",
+        "bind": "w, d, d",
+        "cooldown": 75,
+        "usages": 1
     },
     {
-        "name": "Eagle Cluster Bomb",
-        "bind": "W, D, S, S, D",
-        "coolS": 8
+        "name": "HD2-EA",
+        "bind": "w, d, s, d",
+        "cooldown": 8,
+        "usages": 1
     },
     {
-        "name": "Eagle Napalm Airstrike",
-        "bind": "W, D, S, W",
-        "coolS": 8
+        "name": "Eagle-Cluster-Bomb",
+        "bind": "w, d, s, s, d",
+        "cooldown": 8,
+        "usages": 1
     },
     {
-        "name": "Jump Pack",
-        "bind": "S, W, W, S, W",
-        "coolS": 480
+        "name": "HD2-ECB",
+        "bind": "w, d, s, w",
+        "cooldown": 8,
+        "usages": 1
     },
     {
-        "name": "Eagle Smoke Strike",
-        "bind": "W, D, W, S",
-        "coolS": 8
+        "name": "HD2-JP",
+        "bind": "s, w, w, s, w",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Eagle 110MM Rocket Pods",
-        "bind": "W, D, W, A",
-        "coolS": 8
+        "name": "HD2-ESS",
+        "bind": "w, d, w, s",
+        "cooldown": 8,
+        "usages": 1
     },
     {
-        "name": "Eagle 500KG Bomb",
-        "bind": "W, D, S, S, S",
-        "coolS": 8
+        "name": "HD2-E110",
+        "bind": "w, d, w, a",
+        "cooldown": 8,
+        "usages": 1
     },
     {
-        "name": "Orbital Precision Strike",
-        "bind": "D, D, W",
-        "coolS": 100
+        "name": "HD2-E500",
+        "bind": "w, d, s, s, s",
+        "cooldown": 8,
+        "usages": 1
     },
     {
-        "name": "Orbital Gas Strike",
-        "bind": "D, D, S, D",
-        "coolS": 75
+        "name": "HD2-OPS",
+        "bind": "d, d, w",
+        "cooldown": 100,
+        "usages": 1
     },
     {
-        "name": "Orbital EMS Strike",
-        "bind": "D, D, A, S",
-        "coolS": 75
+        "name": "HD2-OGS",
+        "bind": "d, d, s, d",
+        "cooldown": 75,
+        "usages": 1
     },
     {
-        "name": "Orbital Smoke Strike",
-        "bind": "D, D, S, W",
-        "coolS": 100
+        "name": "HD2-OES",
+        "bind": "d, d, a, s",
+        "cooldown": 75,
+        "usages": 1
     },
     {
-        "name": "HMG Emplacement",
-        "bind": "S, W, A, D, D, A",
-        "coolS": 180
+        "name": "HD2-OSS",
+        "bind": "d, d, s, w",
+        "cooldown": 100,
+        "usages": 1
     },
     {
-        "name": "Shield Generation Relay",
-        "bind": "S, W, A, S, D, D",
-        "coolS": 90
+        "name": "HD2-HMG",
+        "bind": "s, w, a, d, d, a",
+        "cooldown": 180,
+        "usages": 1
     },
     {
-        "name": "Tesla Tower",
-        "bind": "S, W, D, W, A, D",
-        "coolS": 150
+        "name": "HD2-SG",
+        "bind": "s, w, a, s, d, d",
+        "cooldown": 90,
+        "usages": 1
     },
     {
-        "name": "Anti-Personnel Minefield",
-        "bind": "S, A, W, D",
-        "coolS": 180
+        "name": "HD2-TT",
+        "bind": "s, w, d, w, a, d",
+        "cooldown": 150,
+        "usages": 1
     },
     {
-        "name": "SWply Pack",
-        "bind": "S, A, S, W, W, S",
-        "coolS": 480
+        "name": "HD2-APM",
+        "bind": "s, a, w, d",
+        "cooldown": 180,
+        "usages": 1
     },
     {
-        "name": "Grenade Launcher",
-        "bind": "S, A, W, A, S",
-        "coolS": 480
+        "name": "HD2-SP",
+        "bind": "s, a, s, w, w, s",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Laser Cannon",
-        "bind": "S, A, S, W, A",
-        "coolS": 480
+        "name": "HD2-GL",
+        "bind": "s, a, w, a, s",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Incendiary Mines",
-        "bind": "S, A, A, S",
-        "coolS": 180
+        "name": "HD2-LC",
+        "bind": "s, a, s, w, a",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Guard Dog-Rover",
-        "bind": "S, W, A, W, D, D",
-        "coolS": 480
+        "name": "HD2-IM",
+        "bind": "s, a, a, s",
+        "cooldown": 180,
+        "usages": 1
     },
     {
-        "name": "Ballistic Shield Backpack",
-        "bind": "S, A, W, W, D",
-        "coolS": 300
+        "name": "HD2-GDR",
+        "bind": "s, w, a, w, d, d",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Arc Thrower",
-        "bind": "S, D, W, A, S",
-        "coolS": 480
+        "name": "HD2-BS",
+        "bind": "s, a, w, w, d",
+        "cooldown": 300,
+        "usages": 1
     },
     {
-        "name": "Quasar Cannon",
-        "bind": "S, W, A, D, A, D",
-        "coolS": 480
+        "name": "HD2-AT",
+        "bind": "s, d, w, a, s",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Shield Generator Pack",
-        "bind": "S, W, A, D, A, D",
-        "coolS": 480
+        "name": "HD2-QC",
+        "bind": "s, w, a, d, a, d",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Machine Gun Sentry",
-        "bind": "S, W, D, D, W",
-        "coolS": 180
+        "name": "HD2-SGP",
+        "bind": "s, w, a, d, a, d",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Gatling Sentry",
-        "bind": "S, W, D, A",
-        "coolS": 180
+        "name": "HD2-MGS",
+        "bind": "s, w, d, d, w",
+        "cooldown": 180,
+        "usages": 1
     },
     {
-        "name": "Mortar Sentry",
-        "bind": "S, W, D, D, S",
-        "coolS": 180
+        "name": "HD2-GS",
+        "bind": "s, w, d, a",
+        "cooldown": 180,
+        "usages": 1
     },
     {
-        "name": "Guard Dog",
-        "bind": "S, W, A, W, D, S",
-        "coolS": 480
+        "name": "HD2-MS",
+        "bind": "s, w, d, d, s",
+        "cooldown": 180,
+        "usages": 1
     },
     {
-        "name": "Autocannon Sentry",
-        "bind": "S, W, D, W, A, W",
-        "coolS": 180
+        "name": "HD2-GD",
+        "bind": "s, w, a, w, d, s",
+        "cooldown": 480,
+        "usages": 1
     },
     {
-        "name": "Rocket Sentry",
-        "bind": "S, W, D, D, A",
-        "coolS": 180
+        "name": "HD2-AS",
+        "bind": "s, w, d, w, a, w",
+        "cooldown": 180,
+        "usages": 1
     },
     {
-        "name": "EMS Mortar Sentry",
-        "bind": "S, S, W, W, A",
-        "coolS": 180
+        "name": "HD2-RS",
+        "bind": "s, w, d, d, a",
+        "cooldown": 180,
+        "usages": 1
     },
     {
-        "name": "Patriot Exosuit",
-        "bind": "A, S, D, W, A, S, S",
-        "coolS": 600
+        "name": "HD2-EMS",
+        "bind": "s, s, w, w, a",
+        "cooldown": 180,
+        "usages": 1
+    },
+    {
+        "name": "HD2-EXO",
+        "bind": "a, s, d, w, a, s, s",
+        "cooldown": 600,
+        "usages": 1
     }
 ]

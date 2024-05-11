@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.12"
 flask = "^3.0.3"
 keyboard = "^0.13.5"
+pyautogui = "^0.9.54"
 
 
 [build-system]
